@@ -7,7 +7,7 @@ Tujuan  : Melakukan koneksi SSH dan menjalankan perintah diagnostik.
 Pembuat : Richard Dante Gunawan
 NIM     : 2409106061
 """
-
+import os
 import paramiko
 
 from identitas import kode_cabang
@@ -28,7 +28,12 @@ def cek_ssh():
     username = f"admin_{kode_cabang}"
 
     # Ganti dengan password user SSH yang digunakan.
-    password = "dante123"
+    password = os.getenv("SSH_PASSWORD")
+
+    if not password:
+        raise ValueError(
+        "SSH_PASSWORD belum diatur pada environment variable."
+    )
 
     print("\n=== PEMERIKSAAN SSH ===")
     print(f"Host     : {host}")
