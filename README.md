@@ -1,20 +1,36 @@
 # UTS Jaringan Komputer Lanjut
 
-Project Ujian Tengah Semester mata kuliah Jaringan Komputer Lanjut.
-
 ## Identitas
 
 - Nama: Richard Dante Gunawan
 - NIM: 2409106061
+- Kelas: B 2024
 
-## Deskripsi
+## Deskripsi Project
 
-Project ini merupakan implementasi integrasi jaringan menggunakan Python
-yang mencakup:
+Project ini dibuat untuk memenuhi Ujian Tengah Semester
+mata kuliah Jaringan Komputer Lanjut.
 
-- Identitas perangkat
-- SSH
-- SNMP
-- NETCONF
-- Telemetry
+Project mengintegrasikan beberapa konsep otomatisasi jaringan
+menggunakan Python, yaitu:
+
+- Identitas cabang
+- SSH menggunakan Paramiko
+- SNMP menggunakan PySNMP
+- Pembuatan pesan NETCONF
+- Analisis data Telemetry
 - Integrasi laporan akhir
+
+## Struktur Project
+
+```text
+2409106061_RICHARDDANTEGUNAWAN_UTS_JKL/
+│
+├── .gitignore
+├── README.md
+├── identitas.py
+├── ssh_modul.py
+├── snmp_modul.py
+├── netconf_modul.py
+├── telemetry_modul.py
+└── main.py
