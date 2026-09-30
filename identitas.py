@@ -4,8 +4,8 @@
 """
 File    : identitas.py
 Tujuan  : Menyimpan identitas cabang dan membuat ID perangkat.
-Pembuat : NAMA_LENGKAP
-NIM     : NIM_KAMU
+Pembuat : Richard Dante Gunawan
+NIM     : 2409106061
 """
 
 # ============================================================
